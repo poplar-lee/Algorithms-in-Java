@@ -9,11 +9,11 @@ import org.junit.Test;
 
 /**
  * @author lifeilong
- * @date 2016Äê1ÔÂ31ÈÕ ÏÂÎç9:52:21
+ * @date 2016å¹´1æœˆ31æ—¥ ä¸‹åˆ9:52:21
  */
 public class ConnectivityQuickFindTest {
 	
-	static int[] ps = new int[12];	//psºÍqs ×é³ÉÊäÈë¶Ô
+	static int[] ps = new int[12];	//pså’Œqs ç»„æˆè¾“å…¥å¯¹
 	static int[] qs = new int[12]; 
 	
 	static {

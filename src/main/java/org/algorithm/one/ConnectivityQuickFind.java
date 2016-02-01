@@ -4,9 +4,9 @@
 package org.algorithm.one;
 
 /**
- * Á¬Í¨ÎÊÌâµÄ¿ìËÙ²éÕÒËã·¨.
+ *  è¿é€šé—®é¢˜çš„å¿«é€ŸæŸ¥æ‰¾ç®—æ³•.
  * @author lifeilong
- * @date 2016Äê1ÔÂ31ÈÕ ÏÂÎç9:24:12
+ * @date 2016å¹´1æœˆ31æ—¥ ä¸‹åˆ9:24:12
  */
 public class ConnectivityQuickFind {
 
@@ -14,27 +14,27 @@ public class ConnectivityQuickFind {
 	private int m;
 	
 	/**
-	 * µ±ÇÒ½öµ±pºÍqÊÇÁ¬Í¨µÄ£¬id[p]ºÍid[q]ÏàµÈ.
-	 * psºÍqs ×é³ÉÊäÈë¶Ô
+	 * å½“ä¸”ä»…å½“på’Œqæ˜¯è¿é€šçš„ï¼Œid[p]å’Œid[q]ç›¸ç­‰.
+	 * pså’Œqs ç»„æˆè¾“å…¥å¯¹
 	 * @param ps 
 	 * @param qs
 	 * @return
 	 */
 	public boolean quickFind(int[] ps, int[] qs) {
 		int[] id = new int[n];
-		for (int i = 0; i < n; i++) {	//³õÊ¼»¯Öµ
+		for (int i = 0; i < n; i++) {	//åˆå§‹åŒ–å€¼
 			id[i] = i;
 		}
 		
 		for (int j = 0; j < m; j++) {
 			int p = ps[j];
 			int q = qs[j];
-			if (id[p] == id[q]) {	//pºÍqÊÇÁ¬Í¨µÄ
+			if (id[p] == id[q]) {	//på’Œqæ˜¯è¿é€šçš„
 				continue;
 			}
-			for (int i = 0, t = id[p]; i < n; i++) {	//N¸ö¶ÔÏóµÄÁ¬Í¨ĞÔ
+			for (int i = 0, t = id[p]; i < n; i++) {	//Nä¸ªå¯¹è±¡çš„è¿é€šæ€§
 				if (id[i] == t) {
-					id[i] = id[q];	//°ÑpÎ»ÖÃµÄÖµ¸ÄÎªqÎ»ÖÃµÄÖµ
+					id[i] = id[q];	//æŠŠpä½ç½®çš„å€¼æ”¹ä¸ºqä½ç½®çš„å€¼Öµ
 				}
 			}
 			
